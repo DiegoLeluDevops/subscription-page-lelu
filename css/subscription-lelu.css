@@ -1,0 +1,183 @@
+*{
+  box-sizing: border-box;
+  margin:0px;
+}
+.subscription-container{
+  font-family: 'Baloo 2', cursive;
+}
+
+.subscription--step{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  
+}
+
+.subscription--step .image{
+  position:relative;
+  display:flex;
+  width:310px; 
+  height:310px; 
+  border-radius:50%; 
+  border:4px solid #3f3f9d;; 
+  align-items:center; 
+  justify-content: center;
+  box-sizing: inherit;
+  margin:16px;
+}
+
+.subscription--step .label{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height:100%;
+}
+
+.subscription--step .label p{
+  text-align: center;
+}
+
+.subscription--step .image::before{
+  position:absolute;
+  top:35px;
+  left:8px;
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  content:"1";
+  padding:8px;
+  background:#3f3f9d;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  color:white;
+  border:2px solid white;
+  z-index:1;
+  font-weight: bold;
+  font-size:24px;
+}
+.subscription--step.step-2 .image::before{
+  content:"2";
+}
+.subscription--step.step-3 .image::before{
+  content:"3";
+}
+
+.subscription--steps-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscription--steps{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:48px;
+}
+
+.subscription--step .round{
+  display:flex;
+  position:relative;
+  width:296px; 
+  height:296px; 
+  border-radius:50%; 
+  align-items:center; 
+  justify-content: center;
+  overflow:hidden;
+}
+
+.subscription--step .round .zoomed{
+  width:500px;
+  height:auto;
+  margin-right:40%;
+}
+
+.subscription--howto{
+  display:flex;
+  justify-content: center;
+  margin-top:48px;
+  margin-bottom:16px;
+}
+
+.subscription--top-container{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.subscription--banner{
+  width: 100%;
+}
+.subscription--perks{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap:48px;
+  margin:auto;
+  padding-inline:32px;
+}
+
+.subscription--perks .box{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  position:relative;
+  top:-32px;
+  background:white;
+  border-radius:8px;
+  box-shadow:0px 5px 5px #374e6d2d;
+  padding:16px;
+}
+
+.subscription--perks .box svg{
+  fill:none;
+  stroke:#374e6d; 
+  stroke-width:2px;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  align-self:center;
+  justify-self:center;
+}
+
+.subscription--perks .box .label{
+  font-weight: bold;
+  font-size:24px;
+  justify-self:center;
+}
+
+.subscription--perks span{
+  text-align: center;
+  font-size:18px;
+  font-weight: 500;
+}
+
+.subscription--faq-container{
+  margin-top:64px;
+}
+
+.subscription--faq{
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  top:-64px;
+  max-width:80%;
+  height:fill;
+  background:white;
+  border-radius:8px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.137);
+}
+
+.subscription--faq .faq--line{
+  padding:16px;
+}
+.subscription--faq .faq--line p{
+  font-weight: bold;
+  font-size:18px;
+}
+
+.subscription--faq .faq--line span{
+  font-size:18px;
+}
