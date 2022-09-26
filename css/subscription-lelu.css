@@ -10,7 +10,6 @@
   display:flex;
   flex-direction:column;
   align-items:center;
-  
 }
 
 .subscription--step .image{
@@ -74,7 +73,6 @@
 
 .subscription--steps{
   display:grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-gap:48px;
 }
 
@@ -113,7 +111,6 @@
 }
 .subscription--perks{
   display:grid;
-  grid-template-columns: repeat(4, 1fr);
   grid-gap:48px;
   margin:auto;
   padding-inline:32px;
@@ -181,3 +178,22 @@
 .subscription--faq .faq--line span{
   font-size:18px;
 }
+
+@media screen and (max-width: 1050px){
+  .hide-sd{
+    display:none;
+  }
+}
+
+@media screen and (min-width: 1050px){
+  .sd--perks-grid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .sd--steps-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hide-md{
+    display:none;
+  }
+}
+
